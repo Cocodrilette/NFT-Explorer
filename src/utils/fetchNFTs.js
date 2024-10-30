@@ -1,7 +1,7 @@
 import { JsonRpcProvider, Contract } from "ethers";
 import { AvaCloudSDK } from "@avalabs/avacloud-sdk";
 
-import { ERC721_ABI } from "../constants";
+import { DEFAULT_IMAGE, ERC721_ABI } from "../constants";
 
 const {
   REACT_APP_AVACLOUD_API_KEY: apiKey,
@@ -82,5 +82,9 @@ const fetchTokenUri = async (contractAddress, tokenId) => {
   const provider = new JsonRpcProvider(rpcUrl);
   const contract = new Contract(contractAddress, ERC721_ABI, provider);
 
-  return await contract.tokenURI(tokenId);
+  try {
+    return await contract.tokenURI(tokenId);
+  } catch (error) {
+    return DEFAULT_IMAGE;
+  }
 };

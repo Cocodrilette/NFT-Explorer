@@ -19,3 +19,5 @@ export const ERC721_ABI = [
     type: "function",
   },
 ];
+
+export const DEFAULT_IMAGE = "https://related-gold-lynx.myfilebase.com/ipfs/QmPDPBxnPdGJ1Mzq4RzNDf7oSiEWPrB4NQk3hPUDoxpHZY"

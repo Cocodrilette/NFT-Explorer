@@ -12,7 +12,7 @@ const NftCard = ({ image, id, title, address }) => {
             <a
               target="_blank"
               className="text-blue-700"
-              href={`https://etherscan.io/token/${address}`}
+              href={`https://testnet.snowtrace.io/address/${address}`}
             >{`${address.slice(0, 4)}...${address.slice(
               address.length - 4
             )}`}</a>
