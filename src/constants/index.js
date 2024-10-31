@@ -20,4 +20,7 @@ export const ERC721_ABI = [
   },
 ];
 
-export const DEFAULT_IMAGE = "https://related-gold-lynx.myfilebase.com/ipfs/QmPDPBxnPdGJ1Mzq4RzNDf7oSiEWPrB4NQk3hPUDoxpHZY"
+export const DEFAULT_IMAGE =
+  "https://related-gold-lynx.myfilebase.com/ipfs/QmPDPBxnPdGJ1Mzq4RzNDf7oSiEWPrB4NQk3hPUDoxpHZY";
+
+export const RPC_URL = process.env.REACT_APP_RPC_URL;
